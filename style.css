@@ -1,0 +1,64 @@
+#tabuleiro body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+}
+
+#tabuleiro {
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.celula {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+}
+
+.celula:hover {
+    background-color: #f1f1f1;
+}
+
+.celula.desativada {
+    cursor: not-allowed;
+    background-color: #e9ecef;
+}
+
+
+.celula {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.celula:hover {
+    background-color: #f1f1f1;
+}
+
+.celula.desativada {
+    cursor: not-allowed;
+    background-color: #e9ecef;
+}
